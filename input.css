@@ -15,23 +15,23 @@
 }
 
 .nav-link {
-  @apply mx-3 font-semibold text-slate-500 hover:text-red-500 transition duration-200;
+  @apply mx-3 font-semibold text-slate-500 hover:text-red-500 transition duration-200 hidden xl:block;
 }
 
 .main-container {
-  @apply grid gap-6 grid-cols-1 xl:grid-cols-3 mt-4  m-auto;
+  @apply grid gap-6 grid-cols-1  xl:grid-cols-3 mt-4  m-auto;
 }
 
 .image-design {
-  @apply col-span-2;
+  @apply xl:col-span-2;
 }
 
 .heading {
-  @apply font-bold row-start-2 col-span-1 p-2 text-6xl;
+  @apply font-bold  row-start-2 col-span-1 p-2 text-5xl  xl:text-6xl;
 }
 
 .text-section {
-  @apply text-slate-500 row-start-2 col-span-1 p-2;
+  @apply text-slate-500 row-start-3  xl:row-start-2 xl:col-span-1 p-2;
 }
 
 .btn {
@@ -39,7 +39,7 @@
 }
 
 .news-section {
-  @apply col-span-1 row-span-2 py-8 px-4 bg-slate-900 text-white;
+  @apply col-span-1 row-start-4  xl:row-start-1  xl:row-span-2 py-8 px-4 bg-slate-900 text-white;
 }
 
 .news-heading {
@@ -48,6 +48,14 @@
 
 .bottom-card {
   @apply p-2 flex;
+}
+
+.card-heading {
+  @apply font-bold mb-6 hover:text-red-500 transition duration-200 cursor-pointer;
+}
+
+.card-number {
+  @apply text-slate-500 text-4xl mb-2;
 }
 
 .card-text {
